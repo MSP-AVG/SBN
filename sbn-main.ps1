@@ -6,7 +6,8 @@ Creates Setup Complete Files
 Set-ExecutionPolicy Bypass -Force
 iex (irm https://raw.githubusercontent.com/MSP-AVG/SBN/refs/heads/main/sbn-ap-menu.ps1)
 iex (irm https://raw.githubusercontent.com/MSP-AVG/SBN/refs/heads/main/sbn-ap-keyboard.ps1)
-
+pause
+exit
 Write-Host -Foreground Red $GroupTag
 sleep -Seconds 3
 
