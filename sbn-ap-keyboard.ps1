@@ -56,7 +56,8 @@ $listBox.Location = New-Object System.Drawing.Point(10,40)
 $listBox.Size = New-Object System.Drawing.Size(260,20)
 $listBox.Height = 240
 $listBox.Width  = 300
-[void] $listBox.Items.Add('-------- TriFinance --------')
+[void] $listBox.Items.Add('-------- Keyboard Layout --------')
+[void] $listBox.Items.Add('')
 [void] $listBox.Items.Add('Danish')
 [void] $listBox.Items.Add('Dutch')
 [void] $listBox.Items.Add('German')
