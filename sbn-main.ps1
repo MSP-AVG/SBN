@@ -5,6 +5,7 @@ Creates Setup Complete Files
 
 Set-ExecutionPolicy Bypass -Force
 iex (irm https://raw.githubusercontent.com/MSP-AVG/AE/refs/heads/main/sbn-ap-menu.ps1)
+iex (irm https://raw.githubusercontent.com/MSP-AVG/AE/refs/heads/main/sbn-ap-keyboard.ps1)
 
 Write-Host -Foreground Red $GroupTag
 sleep -Seconds 3
@@ -109,6 +110,10 @@ if (!(Test-Path $DriverPath)){New-Item -ItemType Directory -Path $DriverPath}
 if (!(Test-Path $DriverPath$ImageFileNameDL)){Copy-Item -Path C:\OSDCloud\OS\$ImageFileNameDL -Destination $DriverPath$ImageFileNameDL -Force}
 }
 #===================
+if($keyboard -eq 'DK'){Dism /image:C:\ /Set-InputLocale:0406:00000406}
+# if($keyboard -eq 'NL'){Dism /image:C:\ /Set-InputLocale:046E:0000046E}
+if($keyboard -eq 'DE'){Dism /image:C:\ /Set-InputLocale:0407:00000407}
+if($keyboard -eq 'NO'){Dism /image:C:\ /Set-InputLocale:0414:00000414}
 
 Restart-Computer
 }
