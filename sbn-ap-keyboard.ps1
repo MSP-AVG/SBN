@@ -58,10 +58,10 @@ $listBox.Height = 240
 $listBox.Width  = 300
 [void] $listBox.Items.Add('-------- Keyboard Layout --------')
 [void] $listBox.Items.Add('')
-[void] $listBox.Items.Add('Danish')
-[void] $listBox.Items.Add('Dutch')
-[void] $listBox.Items.Add('German')
-[void] $listBox.Items.Add('Norwegian')
+[void] $listBox.Items.Add('DK')
+[void] $listBox.Items.Add('NL')
+[void] $listBox.Items.Add('DE')
+[void] $listBox.Items.Add('NO')
 [void] $listBox.Items.Add('')
 
 
