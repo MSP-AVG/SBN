@@ -32,7 +32,7 @@ if ($env:SystemDrive -eq 'X:') {
 $Product = (Get-MyComputerProduct)
 $OSVersion = 'Windows 11' #Used to Determine Driver Pack
 $OSReleaseID = '24H2' #Used to Determine Driver Pack
-$OSName = 'Windows 11 23H2 x64'
+$OSName = 'Windows 11 24H2 x64'
 $OSEdition = 'Pro'
 $OSActivation = 'Volume'
 $OSLanguage = 'en-US'
